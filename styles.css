@@ -1,279 +1,289 @@
 .logo {
-    animation: rotar 5s linear infinite;
-    margin-bottom: 30px;
+  animation: rotar 5s linear infinite;
+  margin-bottom: 30px;
 }
 
 @keyframes rotar {
-    from{
-        transform: rotateY(180deg);
-    }to{
-        transform: rotateY(-180deg);
-    }
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(-180deg);
+  }
 }
 
 body {
-    background: black;
-    background-image:
-        radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
-        radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
-        radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
-        radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
-    background-size: 550px 550px, 350px 350px, 450px 450px, 400px 400px;
-    background-position: 0 0, -100px -100px, 130px 270px, -70px -100px;
-    animation: movimiento 10s linear infinite;
+  background: black;
+  background-image: radial-gradient(
+      white,
+      rgba(255, 255, 255, 0.2) 2px,
+      transparent 40px
+    ),
+    radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
+    radial-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.1) 2px,
+      transparent 30px
+    );
+  background-size: 550px 550px, 350px 350px, 450px 450px, 400px 400px;
+  background-position: 0 0, -100px -100px, 130px 270px, -70px -100px;
+  animation: movimiento 10s linear infinite;
 }
 
 @keyframes movimiento {
-    0% {
-        background-position: 0 0, -100px -100px, 130px 270px, -70px -100px;
-    }
-    100% {
-        background-position: 500px 1000px, 200px 400px, -300px -700px, 150px -200px;
-    }
+  0% {
+    background-position: 0 0, -100px -100px, 130px 270px, -70px -100px;
+  }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -300px -700px, 150px -200px;
+  }
 }
-
 
 .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #f0f0f0;
-    text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f0f0f0;
+  text-align: center;
 }
-.img{
-    height: 180px; 
-    width: 135px; 
-    border-radius: 25px; 
-    border: 2px ridge yellow;
-    filter: drop-shadow(0px 7px 21px rgb(255, 204, 0));
+.img {
+  height: 180px;
+  width: 195px;
+  border-radius: 25px;
+  border: 2px ridge yellow;
+  filter: drop-shadow(0px 7px 21px rgb(255, 204, 0));
 }
 .social-links {
-    max-width: 200px; /* Ajusta este valor según tus necesidades */
-    margin-left: 0; /* Asegura que no haya margen a la izquierda */
+  max-width: 200px; /* Ajusta este valor según tus necesidades */
+  margin-left: 0; /* Asegura que no haya margen a la izquierda */
 }
 .btnNav {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    border: 2px ridge yellow;
-    margin: 40px;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px ridge yellow;
+  margin: 40px;
 }
 .btnNav:hover {
-    background-color: #555;
+  background-color: #555;
 }
 .header {
-    height: 200px; /* Altura del encabezado */
-    width: 100%;
-    position: fixed;
-    top: 0;
-    background-color: white; /* Cambia el color del fondo del encabezado según necesites */
-    z-index: 1000;
+  height: 200px; /* Altura del encabezado */
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: white; /* Cambia el color del fondo del encabezado según necesites */
+  z-index: 1000;
 }
 .section {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container {
-    max-width: 800px; /* o el valor que prefieras */
-    width: 100%;
+  max-width: 800px; /* o el valor que prefieras */
+  width: 100%;
 }
 .container2 {
-    max-width: 600px; /* o el valor que prefieras */
-    width: 100%;
+  max-width: 600px; /* o el valor que prefieras */
+  width: 100%;
 }
-.content{
-    position: sticky;
-    top: 40px;
+.content {
+  position: sticky;
+  top: 40px;
 }
-.go-top-container{
-    position: fixed;
-    bottom: 4rem;
-    right: 4rem;
-    width: 4.6rem;
-    height: 4.6rem;
-    z-index: -1;
+.go-top-container {
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+  width: 4.6rem;
+  height: 4.6rem;
+  z-index: -1;
 }
-.go-top-button{
-    height: 0rem;
+.go-top-button {
+  height: 0rem;
+  width: 0rem;
+  background: #000000;
+  border-radius: 50%;
+  border: 2px ridge yellow;
+  filter: drop-shadow(0px 4px 8px rgb(255, 204, 0));
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.go-top-button i {
+  position: absolute;
+  font-size: 1.7rem;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: white;
+  transition: 0.2s;
+}
+.show {
+  z-index: 10;
+}
+.show .go-top-button {
+  animation: popup 0.3s ease-in-out;
+  width: 3.6rem;
+  height: 3.6rem;
+  z-index: 11;
+}
+.show i {
+  transform: translate(-50%, 50%) scale(1);
+}
+
+@keyframes popup {
+  0% {
     width: 0rem;
-    background: #000000;
-    border-radius: 50%;
-    border: 2px ridge yellow;
-    filter: drop-shadow(0px 7px 21px rgb(255, 204, 0));
-    cursor: pointer;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-}
-.go-top-button i{
-    position: absolute;
-    font-size: 1.7rem;
-    left: 50%;
-    transform: translate(-50%, -50% ) scale(0);
-    color: white;
-    transition: .2s;
-}
-.show{
-    z-index: 10;
-}
-.show .go-top-button{
-    animation: popup .3s ease-in-out;
+    height: 0rem;
+  }
+  50% {
+    width: 3rem;
+    height: 3rem;
+  }
+  100% {
     width: 3.6rem;
     height: 3.6rem;
-    z-index: 11;
-}
-.show i{
-    transform: translate(-50%, 50%) scale(1);
+  }
 }
 
-@keyframes popup{
-    0%{
-        width: 0rem;
-        height: 0rem;
-    }
-    50%{
-        width: 3rem;
-        height: 3rem;
-    }
-    100%{
-        width: 3.6rem;
-        height: 3.6rem;
-    }
-}
-
-.boton-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.boton-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .dotgothic {
-    font-family: "Press Start 2P", system-ui;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 18px;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
 }
 .dotgothic2 {
-    font-family: "Press Start 2P", system-ui;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 15px;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15px;
 }
-.pColor{
-    color: white;
+.pColor {
+  color: white;
 }
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 .gallery img {
-    border: 2px ridge yellow;
-    filter: drop-shadow(0px 7px 21px rgb(255, 204, 0));
-    cursor: pointer;
+  border: 2px ridge yellow;
+  filter: drop-shadow(0px 4px 8px rgb(255, 204, 0));
+  cursor: pointer;
 }
 .modal-target:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
-  }
-  
-  /* Modal Content (image) */
-  .modal-content {
-    margin: auto;
-    display: block;
-    width: 60%;
-    opacity: 1 !important;
-    max-width: 1200px;
-  }
-  
-  /* Caption of Modal Image */
-  .modal-caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 1200px;
-    text-align: center;
-    color: white;
-    font-weight: 700;
-    font-size: 1em;
-    margin-top: 32px;
-  }
-  
-  /* Add Animation */
-  .modal-content, .modal-caption {  
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-  }
-  
-  @-webkit-keyframes zoom {
-    from {-webkit-atransform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-  }
-  
-  @keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-  }
-  
-  /* The Close Button */
-  .modal-close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-  
-  .modal-close:hover,
-  .modal-close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .input-group{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .input-box {
-    flex-grow: 1;
-    margin-bottom: 49px;
-    height: 40px;
-    max-width: 700px;
-    margin-left: 10px;
-    padding-left: 30px;
-    border-radius: 8px;
-}
-.ml{
-    margin-left: 190px;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
 }
 
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 60%;
+  opacity: 1 !important;
+  max-width: 1200px;
+}
 
+/* Caption of Modal Image */
+.modal-caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 1200px;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  margin-top: 32px;
+}
 
+/* Add Animation */
+.modal-content,
+.modal-caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
 
-  
+@-webkit-keyframes zoom {
+  from {
+    -webkit-atransform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
 
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-box {
+  flex-grow: 1;
+  margin-bottom: 49px;
+  height: 40px;
+  max-width: 700px;
+  margin-left: 10px;
+  padding-left: 30px;
+  border-radius: 8px;
+}
+.ml {
+  margin-left: 190px;
+}
