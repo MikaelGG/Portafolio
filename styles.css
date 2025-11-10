@@ -213,6 +213,12 @@ img {
   cursor: pointer;
 }
 
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .modal-target:hover {
   opacity: 0.7;
 }
